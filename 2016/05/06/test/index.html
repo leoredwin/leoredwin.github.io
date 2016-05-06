@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="java," />
 
 
 
@@ -86,15 +86,22 @@
 
 
 
-<meta name="description" content="分享一些自己在日常工作中的心得，技术上的突破，还有一些无病呻吟的stuff">
-<meta property="og:type" content="website">
-<meta property="og:title" content="一个逗比程序员的日常">
-<meta property="og:url" content="http://leoredwin.cc/index.html">
+<meta name="description" content="作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化.首先是for循环的写法上面最原始的写法public void optimalizeFor() {
+   List list = new ArrayList&amp;lt;&amp;gt;();
+   for (int i = 0; i &amp;lt; list.size(); i++) {">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java中for循环的优化123">
+<meta property="og:url" content="http://leoredwin.cc/2016/05/06/test/index.html">
 <meta property="og:site_name" content="一个逗比程序员的日常">
-<meta property="og:description" content="分享一些自己在日常工作中的心得，技术上的突破，还有一些无病呻吟的stuff">
+<meta property="og:description" content="作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化.首先是for循环的写法上面最原始的写法public void optimalizeFor() {
+   List list = new ArrayList&amp;lt;&amp;gt;();
+   for (int i = 0; i &amp;lt; list.size(); i++) {">
+<meta property="og:updated_time" content="2016-05-06T11:30:03.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="一个逗比程序员的日常">
-<meta name="twitter:description" content="分享一些自己在日常工作中的心得，技术上的突破，还有一些无病呻吟的stuff">
+<meta name="twitter:title" content="java中for循环的优化123">
+<meta name="twitter:description" content="作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化.首先是for循环的写法上面最原始的写法public void optimalizeFor() {
+   List list = new ArrayList&amp;lt;&amp;gt;();
+   for (int i = 0; i &amp;lt; list.size(); i++) {">
 
 
 
@@ -112,7 +119,7 @@
   };
 </script>
 
-  <title> 一个逗比程序员的日常 </title>
+  <title> java中for循环的优化123 | 一个逗比程序员的日常 </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -133,9 +140,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -222,9 +227,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -244,10 +249,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2016/05/06/java/" itemprop="url">
-                  java中for循环的优化
-                </a>
+                java中for循环的优化123
               
             
           </h1>
@@ -259,7 +261,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-05-06T19:19:21+08:00" content="2016-05-06">
+            <time itemprop="dateCreated" datetime="2016-05-06T19:25:19+08:00" content="2016-05-06">
               2016-05-06
             </time>
           </span>
@@ -289,8 +291,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/05/06/java/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/06/java/" itemprop="commentsCount"></span>
+                <a href="/2016/05/06/test/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/05/06/test/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -313,9 +315,7 @@
       
 
       
-        
-          
-            <h5 id="作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化"><a href="#作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化" class="headerlink" title="作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化."></a>作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化.</h5><h4 id="首先是for循环的写法上面"><a href="#首先是for循环的写法上面" class="headerlink" title="首先是for循环的写法上面"></a>首先是for循环的写法上面</h4><h4 id="最原始的写法"><a href="#最原始的写法" class="headerlink" title="最原始的写法"></a>最原始的写法</h4><pre><code>public void optimalizeFor() {
+        <h5 id="作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化"><a href="#作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化" class="headerlink" title="作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化."></a>作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化.</h5><h4 id="首先是for循环的写法上面"><a href="#首先是for循环的写法上面" class="headerlink" title="首先是for循环的写法上面"></a>首先是for循环的写法上面</h4><h4 id="最原始的写法"><a href="#最原始的写法" class="headerlink" title="最原始的写法"></a>最原始的写法</h4><pre><code>public void optimalizeFor() {
    List list = new ArrayList&lt;&gt;();
    for (int i = 0; i &lt; list.size(); i++) { 
       }        
@@ -367,36 +367,63 @@ for (int i = 0; i &lt; 10; i++) {
 优化后用时：489
 </code></pre><h5 id="为什么-3"><a href="#为什么-3" class="headerlink" title="为什么"></a>为什么</h5><pre><code>每次抓捕异常时非常耗时的，应该放在循环外一次性抓取，而不是应该放在循环内去每循环一次都抓取一次异常
 </code></pre>
-          
+      
+    </div>
+
+    <div>
+      
         
+<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
+    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="leo wechat" style="width: 200px; max-width: 100%;"/>
+    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
+</div>
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/tags/java/" rel="tag">#java</a>
+          
+        </div>
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/05/06/java/" rel="next" title="java中for循环的优化">
+                <i class="fa fa-chevron-left"></i> java中for循环的优化
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -404,6 +431,14 @@ for (int i = 0; i &lt; 10; i++) {
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/05/06/test/"
+           data-title="java中for循环的优化123" data-url="http://leoredwin.cc/2016/05/06/test/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -423,8 +458,17 @@ for (int i = 0; i &lt; 10; i++) {
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -435,7 +479,7 @@ for (int i = 0; i &lt; 10; i++) {
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -481,6 +525,17 @@ for (int i = 0; i &lt; 10; i++) {
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化"><span class="nav-number">1.</span> <span class="nav-text">作为java中三大循环之一的for循环，大家应该用的特别多，今天那就以我在项目中遇到的for循环优化来聊一聊for循环的优化.</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#首先是for循环的写法上面"><span class="nav-number"></span> <span class="nav-text">首先是for循环的写法上面</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#最原始的写法"><span class="nav-number"></span> <span class="nav-text">最原始的写法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#调优写法"><span class="nav-number">1.</span> <span class="nav-text">调优写法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#结果"><span class="nav-number">2.</span> <span class="nav-text">结果</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#为什么"><span class="nav-number">2.1.</span> <span class="nav-text">为什么</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#java之循环嵌套"><span class="nav-number">3.</span> <span class="nav-text">java之循环嵌套</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#外小内大型"><span class="nav-number">4.</span> <span class="nav-text">外小内大型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#外大内小型"><span class="nav-number">5.</span> <span class="nav-text">外大内小型</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#结果-1"><span class="nav-number">6.</span> <span class="nav-text">结果</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#为什么-1"><span class="nav-number">7.</span> <span class="nav-text">为什么</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#循环嵌套提取不需要循环的逻辑"><span class="nav-number">8.</span> <span class="nav-text">循环嵌套提取不需要循环的逻辑</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#无用逻辑再循环中"><span class="nav-number">9.</span> <span class="nav-text">无用逻辑再循环中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#无用逻辑再循环外"><span class="nav-number">10.</span> <span class="nav-text">无用逻辑再循环外</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#结果-2"><span class="nav-number">11.</span> <span class="nav-text">结果</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#为什么-2"><span class="nav-number">12.</span> <span class="nav-text">为什么</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#异常处理"><span class="nav-number">13.</span> <span class="nav-text">异常处理</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#异常在循环中"><span class="nav-number">14.</span> <span class="nav-text">异常在循环中</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#异常在循环外"><span class="nav-number">15.</span> <span class="nav-text">异常在循环外</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#结果-3"><span class="nav-number">16.</span> <span class="nav-text">结果</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#为什么-3"><span class="nav-number">17.</span> <span class="nav-text">为什么</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -584,6 +639,10 @@ for (int i = 0; i &lt; 10; i++) {
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
